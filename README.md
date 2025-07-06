@@ -1,7 +1,5 @@
 # OpenCore-Supermicro-C7B250-CB-ML
 
-## Introduction
-
 ## My Hardware
 These are the Hardware component I use. But this OpenCore configuation <strong>should still work</strong> with your MOBO, even if the components are not exactly equal.
 
