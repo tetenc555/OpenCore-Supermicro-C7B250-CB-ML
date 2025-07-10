@@ -17,7 +17,8 @@ These are the Hardware component I use. But this OpenCore configuation <strong>s
 - [X] All USB Ports (my front IO doesnt have USB 3! maybe it can require a remap for them to work)
 - [X] Audio with all audio outputs showing up
 - [X] iServices
-- [X] Graphics Acceleration (need to test VDAEncoder when i change my CPU)
+- [X] Graphics Acceleration
+- [X] IGPU Hardware Acceleration
 - [X] Intel 1219-V Ethernet
 - [X] Dualboot Windows with OpenCore
 - [X] CPU and NVME Power Management
@@ -25,6 +26,7 @@ These are the Hardware component I use. But this OpenCore configuation <strong>s
 - [X] Native NVRAM
 - [X] Sleep and wake!
 - [ ] Hibernation (will try to make it work later!)
+- [ ] Boot-Chime on Opencore Picker (tried to set it up but it doesnt work yet)
 
 ## BIOS Settings!! ^^
 
