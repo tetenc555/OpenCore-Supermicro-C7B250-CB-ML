@@ -1,7 +1,5 @@
 # OpenCore-Supermicro-C7B250-CB-ML
 
-## Introduction
-
 ## My Hardware
 These are the Hardware component I use. But this OpenCore configuation <strong>should still work</strong> with your MOBO, even if the components are not exactly equal.
 
@@ -32,7 +30,7 @@ These are the Hardware component I use. But this OpenCore configuation <strong>s
 
 Its really easy to install macOS on this system (i was actually quite surprised on how it didnt complain about anything, really), but, to make it work, we need to tweak some settings.
 
-### <strong>Okay but we have a problem ~~ </strong>silly me forgot what i really changed or not... So i made this folder with every setting on my bios. I just want to make some notes:
+### <strong>Okay but we have a problem ~~ </strong>silly me forgot what i really changed or not... So i made [this folder](https://github.com/tetenc555/OpenCore-Supermicro-C7B250-CB-ML/tree/main/BIOS) with every setting on my bios. I just want to make some notes:
 
 1. If youre using a supported CPU (i3,i5,i7), please enable Integrated Graphics in Advanced->Graphics Configuration->Internal Graphics. Doing this on a unsupported CPU does not make a difference, besides breaking sleep.
 
@@ -50,5 +48,5 @@ Please do this changes on the config.plist! I will upgrade the config here once 
 2. Delete the data on Kernel -> Emulate -> Cpuid1Data
 3. Delete the data on Kernel -> Emulate -> Cpuid1Mask
 4. Disable Kernel -> Emulate -> DummyPowerManagement
-5. Disable UFEI -> Quirks -> IgnoreInvalidFlexRatio
+5. Disable UEFI -> Quirks -> IgnoreInvalidFlexRatio
 6. Enable the damn integrated graphics in the BIOS!!!
