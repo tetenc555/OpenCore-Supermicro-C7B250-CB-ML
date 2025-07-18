@@ -30,7 +30,7 @@ Tested on Sequoia 15.5 !! ||3
 - [X] Proper SMBUS patching
 - [X] Native NVRAM
 - [X] Sleep and wake!
-- [ ] Hibernation (will try to make it work later!)
+- [X] Hibernation (If youre getting instant wakes with hibernation, disable the Wake-On-Lan function in BIOS!)
 - [ ] Boot-Chime on Opencore Picker (tried to set it up but it doesnt work yet)
 
 ## BIOS Settings!! ^^
@@ -46,3 +46,5 @@ Its really easy to install macOS on this system (i was actually quite surprised 
 3. To disable secure boot and csm, first you need to change all PCIe/PCI/PnP Configuration to UEFI! This is also used for the graphics card on macOS, so it is a must thing to do! Also enable "Above 4GB MMIO BIOS assignment"
 
 4. This bios doesnt let me disable VT-D or CFG-Lock, so keep in mind that we need the quirks related to them on our config.plist (already correctly configured)
+
+5. Disable Wake On Lan, its needed if youre using Hibernation! (mode 3 or mode 25)
