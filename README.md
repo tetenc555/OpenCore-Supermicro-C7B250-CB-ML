@@ -6,13 +6,18 @@ These are the Hardware component I use. But this OpenCore configuation <strong>s
 
 | Category  | Component                            |
 | --------- | ------------------------------------ |
-| CPU       | Intel Core i3 7100 (for now)                 |
+| CPU       | Intel Core i5 7500             |
 | GPU       | Intel UHD Graphics 630 / RX550 2GB Lexa (patched via DP)|
 | SSD       | LiteOn NVME SSD 512GB		   |
 | Memory    | 2x 4GB DDR4 2400Mhz                    |
 
+## Tahoe Disclamier
+Maybe it works with the iGPU? I dont know as mine is headless and i will just wait for a patch for Polaris GPUs. If youre using only the integrated graphics, it should work. USBMap was updated to support Tahoe and FileVault should be functional.
+
 
 ## What's working? :3c
+
+Tested on Sequoia 15.5 !! ||3
 
 - [X] All USB Ports (my front IO doesnt have USB 3! maybe it can require a remap for them to work)
 - [X] Audio with all audio outputs showing up
