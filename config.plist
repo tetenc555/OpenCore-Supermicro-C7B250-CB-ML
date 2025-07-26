@@ -28,7 +28,7 @@
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>SSDT-GPRW.aml</string>
+                    <string>SSDT-SBUS-MCHC.aml</string>
                 </dict>
                 <dict>
                     <key>Comment</key>
@@ -36,7 +36,7 @@
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>SSDT-SBUS-MCHC.aml</string>
+                    <string>SSDT-GPRW.aml</string>
                 </dict>
             </array>
             <key>Delete</key>
@@ -95,7 +95,32 @@
             <key>MmioWhitelist</key>
             <array/>
             <key>Patch</key>
-            <array/>
+            <array>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>Comment</key>
+                    <string>Skip Board ID check</string>
+                    <key>Count</key>
+                    <integer>0</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>AFAAbABhAHQAZgBvAHIAbQBTAHUAcABwAG8AcgB0AC4AcABsAGkAcwB0</data>
+                    <key>Identifier</key>
+                    <string>Apple</string>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>Replace</key>
+                    <data>AC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAu</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                </dict>
+            </array>
             <key>Quirks</key>
             <dict>
                 <key>AllowRelocationBlock</key>
@@ -158,6 +183,11 @@
                     <string>AMD Radeon RX 550</string>
                     <key>no-gfx-spoof</key>
                     <data>AQAAAA==</data>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x14,0x0)</key>
+                <dict>
+                    <key>acpi-wake-type</key>
+                    <data>AQ==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)</key>
                 <dict>
@@ -386,7 +416,7 @@
                     <key>BundlePath</key>
                     <string>USBMap.kext</string>
                     <key>Comment</key>
-                    <string>V1.0</string>
+                    <string>V1.1</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -514,7 +544,7 @@
                 <key>TakeoffDelay</key>
                 <integer>0</integer>
                 <key>Timeout</key>
-                <integer>500</integer>
+                <integer>60</integer>
             </dict>
             <key>Debug</key>
             <dict>
@@ -663,6 +693,8 @@
                 <dict>
                     <key>ForceDisplayRotationInEFI</key>
                     <integer>0</integer>
+                    <key>StartupMute</key>
+                    <data>AA==</data>
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
@@ -690,6 +722,7 @@
                     <string>boot-args</string>
                     <string>ForceDisplayRotationInEFI</string>
                     <string>SystemAudioVolume</string>
+                    <string>StartupMute</string>
                 </array>
             </dict>
             <key>LegacyOverwrite</key>
@@ -772,7 +805,7 @@
             <key>APFS</key>
             <dict>
                 <key>EnableJumpstart</key>
-                <true/>
+                <false/>
                 <key>GlobalConnect</key>
                 <false/>
                 <key>HideVerbose</key>
@@ -832,11 +865,11 @@
                 <key>MinimumAudibleGain</key>
                 <integer>-55</integer>
                 <key>PlayChime</key>
-                <string>Auto</string>
+                <string>Enabled</string>
                 <key>ResetTrafficClass</key>
                 <false/>
                 <key>SetupDelay</key>
-                <integer>0</integer>
+                <integer>500</integer>
             </dict>
             <key>ConnectDrivers</key>
             <true/>
@@ -901,6 +934,18 @@
                     <false/>
                     <key>Path</key>
                     <string>AudioDxe.efi</string>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string>APFS Driver for macOS 15 (fix filevault tahoe)</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>apfs_aligned.efi</string>
                 </dict>
             </array>
             <key>Input</key>

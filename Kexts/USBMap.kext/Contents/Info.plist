@@ -5,24 +5,24 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleGetInfoString</key>
-	<string>v1.0</string>
+	<string>v1.1</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.corpnewt.USBMap</string>
+	<string>com.dhinakg.USBToolBox.map</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>USBMap</string>
+	<string>UTBMap</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>iMac18,3-XHC</key>
+		<key>XHC</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
@@ -37,11 +37,9 @@
 				</dict>
 			</dict>
 			<key>IOProviderClass</key>
-			<string>AppleUSBXHCISPT</string>
+			<string>AppleUSBHostController</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
-				<key>kUSBMuxEnabled</key>
-				<true/>
 				<key>port-count</key>
 				<data>
 				FgAAAA==
@@ -56,12 +54,12 @@
 						<data>
 						AQAAAA==
 						</data>
-						<key>usb-port-type</key>
-						<integer>3</integer>
 						<key>usb-port-number</key>
 						<data>
 						AQAAAA==
 						</data>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 					</dict>
 					<key>HS02</key>
 					<dict>
@@ -71,12 +69,12 @@
 						<data>
 						AgAAAA==
 						</data>
-						<key>usb-port-type</key>
-						<integer>3</integer>
 						<key>usb-port-number</key>
 						<data>
 						AgAAAA==
 						</data>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 					</dict>
 					<key>HS03</key>
 					<dict>
@@ -86,12 +84,12 @@
 						<data>
 						AwAAAA==
 						</data>
-						<key>usb-port-type</key>
-						<integer>3</integer>
 						<key>usb-port-number</key>
 						<data>
 						AwAAAA==
 						</data>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 					</dict>
 					<key>HS04</key>
 					<dict>
@@ -101,12 +99,12 @@
 						<data>
 						BAAAAA==
 						</data>
-						<key>usb-port-type</key>
-						<integer>3</integer>
 						<key>usb-port-number</key>
 						<data>
 						BAAAAA==
 						</data>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 					</dict>
 					<key>HS05</key>
 					<dict>
@@ -116,12 +114,12 @@
 						<data>
 						BQAAAA==
 						</data>
-						<key>usb-port-type</key>
-						<integer>0</integer>
 						<key>usb-port-number</key>
 						<data>
 						BQAAAA==
 						</data>
+						<key>usb-port-type</key>
+						<integer>0</integer>
 					</dict>
 					<key>HS06</key>
 					<dict>
@@ -131,12 +129,12 @@
 						<data>
 						BgAAAA==
 						</data>
-						<key>usb-port-type</key>
-						<integer>0</integer>
 						<key>usb-port-number</key>
 						<data>
 						BgAAAA==
 						</data>
+						<key>usb-port-type</key>
+						<integer>0</integer>
 					</dict>
 					<key>HS07</key>
 					<dict>
@@ -146,12 +144,12 @@
 						<data>
 						CQAAAA==
 						</data>
-						<key>usb-port-type</key>
-						<integer>0</integer>
 						<key>usb-port-number</key>
 						<data>
 						CQAAAA==
 						</data>
+						<key>usb-port-type</key>
+						<integer>0</integer>
 					</dict>
 					<key>HS08</key>
 					<dict>
@@ -161,12 +159,12 @@
 						<data>
 						CwAAAA==
 						</data>
-						<key>usb-port-type</key>
-						<integer>3</integer>
 						<key>usb-port-number</key>
 						<data>
 						CwAAAA==
 						</data>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 					</dict>
 					<key>HS09</key>
 					<dict>
@@ -176,12 +174,12 @@
 						<data>
 						DAAAAA==
 						</data>
-						<key>usb-port-type</key>
-						<integer>3</integer>
 						<key>usb-port-number</key>
 						<data>
 						DAAAAA==
 						</data>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 					</dict>
 					<key>SS01</key>
 					<dict>
@@ -191,12 +189,12 @@
 						<data>
 						EQAAAA==
 						</data>
-						<key>usb-port-type</key>
-						<integer>3</integer>
 						<key>usb-port-number</key>
 						<data>
 						EQAAAA==
 						</data>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 					</dict>
 					<key>SS02</key>
 					<dict>
@@ -206,12 +204,12 @@
 						<data>
 						EgAAAA==
 						</data>
-						<key>usb-port-type</key>
-						<integer>3</integer>
 						<key>usb-port-number</key>
 						<data>
 						EgAAAA==
 						</data>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 					</dict>
 					<key>SS03</key>
 					<dict>
@@ -221,12 +219,12 @@
 						<data>
 						EwAAAA==
 						</data>
-						<key>usb-port-type</key>
-						<integer>3</integer>
 						<key>usb-port-number</key>
 						<data>
 						EwAAAA==
 						</data>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 					</dict>
 					<key>SS04</key>
 					<dict>
@@ -236,12 +234,12 @@
 						<data>
 						FAAAAA==
 						</data>
-						<key>usb-port-type</key>
-						<integer>3</integer>
 						<key>usb-port-number</key>
 						<data>
 						FAAAAA==
 						</data>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 					</dict>
 					<key>SS05</key>
 					<dict>
@@ -251,12 +249,12 @@
 						<data>
 						FQAAAA==
 						</data>
-						<key>usb-port-type</key>
-						<integer>3</integer>
 						<key>usb-port-number</key>
 						<data>
 						FQAAAA==
 						</data>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 					</dict>
 					<key>SS06</key>
 					<dict>
@@ -266,12 +264,12 @@
 						<data>
 						FgAAAA==
 						</data>
-						<key>usb-port-type</key>
-						<integer>3</integer>
 						<key>usb-port-number</key>
 						<data>
 						FgAAAA==
 						</data>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 					</dict>
 				</dict>
 			</dict>
