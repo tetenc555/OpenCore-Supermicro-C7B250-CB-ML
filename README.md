@@ -12,7 +12,9 @@ These are the Hardware component I use. But this OpenCore configuation <strong>s
 | Memory    | 2x 4GB DDR4 2400Mhz                    |
 
 ## Tahoe Disclamier
-Maybe it works with the iGPU? I dont know as mine is headless and i will just wait for a patch for Polaris GPUs. If youre using only the integrated graphics, it should work. USBMap was updated to support Tahoe and FileVault should be functional.
+It works! But please be aware of somethings:
+1. Always when installing or updating, revert root patches (if you have them) and disable whatevergreen IF YOU HAVE A DGPU. whatevergreen can be activated later.
+2. On Tahoe, use the latest OCLP-Mod on the branch tahoe-test. You need this for proper audio. If you have a native airport card, a wifi patch is not avaiable yet :< 
 
 
 ## What's working? :3c
@@ -30,6 +32,7 @@ Tested on Sequoia 15.5 !! ||3
 - [X] Proper SMBUS patching
 - [X] Native NVRAM
 - [X] Sleep and wake!
+- [X] Waking with USB devices! (without double press or Instant wake issues >~<)
 - [X] Hibernation (If youre getting instant wakes with hibernation, disable the Wake-On-Lan function in BIOS!)
 - [ ] Boot-Chime on Opencore Picker (tried to set it up but it doesnt work yet)
 
