@@ -19,7 +19,7 @@ It works! But please be aware of somethings:
 
 ## What's working? :3c
 
-Tested on Sequoia 15.5 !! ||3
+Tested on Tahoe Beta 4 and Sequoia 15.5 !! ||3
 
 - [X] All USB Ports (my front IO doesnt have USB 3! maybe it can require a remap for them to work)
 - [X] Audio with all audio outputs showing up
