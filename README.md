@@ -9,7 +9,8 @@ These are the Hardware component I use. But this OpenCore configuation <strong>s
 | CPU       | Intel Core i5 7500             |
 | GPU       | Intel UHD Graphics 630 / RX550 2GB Lexa (patched via DP)|
 | SSD       | LiteOn NVME SSD 512GB		   |
-| Memory    | 2x 4GB DDR4 2400Mhz                    |
+| Memory    | 2x 8GB 3200mhz + 1x 8GB 2666mhz + 1x 4GB 2400mhz - DDR4 running at the max supported 2400mhz   |
+| WiFi + BT | BCM94360CS2 (Macbook Air 2017 Card) in a M.2 Adapter that is hooked to a PCI-Express adapter. [yeah, its janky ;3](https://down-br.img.susercontent.com/file/br-11134103-81z1k-mhjga3nvbdhef0.webp) |
 
 ## Tahoe Disclamier
 It works! But please be aware of somethings:
